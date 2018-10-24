@@ -1,0 +1,10 @@
+pinfire:
+    media:
+        storage:
+            default-provider: qiniu
+            qiniu:
+                bucket: saas-media
+                access_key: ZAPXN1PEMFMGk3mEtCsnoP2wbFcMj1Ddv12DZwnk
+                secret_key: rm4n-9M6q0b1NKMi_8v-6b5Y_AIvB0g4Ut-ViNR8
+                zone: z2
+                domain: res.media.saas.pinquest.cn

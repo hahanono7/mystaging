@@ -1,0 +1,38 @@
+spring.redis.host: 172.18.239.251
+spring.redis.port: 26379
+spring.redis.database: 0
+
+server.port: 0
+
+pinfire:
+  notification:
+    sms:
+      vcode_template:
+        register:
+          aliyun:
+            signature: 品快科技
+            template_code: SMS_127940045
+            template_params:
+              code: _VC_
+        login:
+          aliyun:
+            signature: 品快科技
+            template_code: SMS_127940047
+            template_params:
+              code: _VC_
+        auth_ident:
+          aliyun:
+            signature: 品快科技
+            template_code: SMS_127940048
+            template_params:
+              code: _VC_
+        recover_passwd:
+          aliyun:
+            signature: 品快科技
+            template_code: SMS_142145102
+            template_params:
+              code: _VC_
+      providers:
+        aliyun:
+          key: LTAIPbrywE3MU71t
+          secret: KFZRANpd3qZtbVflsA88MRpzUW6Prf

@@ -1,0 +1,99 @@
+spring:
+    datasource:
+        url: jdbc:mysql://rm-wz9icd85l8kbklqth.mysql.rds.aliyuncs.com:3306/saas_appmgr?useUnicode=yes&characterEncoding=UTF-8
+        username: saas_dev
+        password: wLAtkUxbbAajZm4A
+
+pinfire:
+    appmgr:
+        prototypes:
+            mall:
+                description: 商城
+                type: wechat_authorized_miniapp
+                creator: 蔡智
+                contact: 蔡智
+                created_at: 2018-09-14
+                attributes:
+                    wechat-open:
+                        appid: wx89270208106b7603
+                        secret: fab6c8ed952cf59c852f4bedd1a7aaf4
+                        token: pinQuestScrm
+                        aeskey: VXOiYotqMApSblHvUXIR1vvH3Dta0iefC4sOvXkDSZe
+                        
+                    # 权宜方便调试
+                    media:
+                        backend: qiniu
+                        options:
+                            access_key: ZAPXN1PEMFMGk3mEtCsnoP2wbFcMj1Ddv12DZwnk
+                            secret_key: rm4n-9M6q0b1NKMi_8v-6b5Y_AIvB0g4Ut-ViNR8
+                            bucket: dandelion-staging
+                            domain: res.dandelion.dev.pinquest.cn
+                            zone: z2
+                    
+                    # Client
+                    "[.CLIENT_CONFIG]":
+                        resource-prefix: res.dandelion.dev.pinquest.cn/static_res
+                        function-switch: 
+                            feature-a: true
+                            feature-b: false
+                        
+                permissions:
+                    per1:
+                        description: 取消订单
+                        value: 3
+                    per2:
+                        description: 删除客户
+                        value: 0
+                roles:
+                    kicker:
+                        description: 踢人的
+                        permissions: per1, per2
+                    fucker:
+                        description: XX人的
+                        permissions: per1
+            
+            dandelion:
+                description: 蒲公英
+                type: wechat_authorized_miniapp
+                creator: 蔡智
+                contact: 蔡智
+                created_at: 2018-09-17
+                attributes:
+                    account:
+                        biz-initor-name: spread
+                        biz-initor-path: /sys/biz_context
+                    wechat-open:
+                        appid: wx89270208106b7603
+                        secret: fab6c8ed952cf59c852f4bedd1a7aaf4
+                        token: pinQuestScrm
+                        aeskey: VXOiYotqMApSblHvUXIR1vvH3Dta0iefC4sOvXkDSZe
+                    media:
+                        backend: qiniu
+                        options:
+                            access_key: ZAPXN1PEMFMGk3mEtCsnoP2wbFcMj1Ddv12DZwnk
+                            secret_key: rm4n-9M6q0b1NKMi_8v-6b5Y_AIvB0g4Ut-ViNR8
+                            bucket: dandelion-staging
+                            domain: res.dandelion.dev.pinquest.cn
+                            zone: z2
+                    # Client
+                    "[.CLIENT_CONFIG]":
+                        resource-prefix: res.dandelion.dev.pinquest.cn/static_res
+                        function-switch: 
+                            feature-a: true
+                            feature-b: false
+                            
+                permissions:
+                    per1:
+                        description: 取消订单
+                        value: 3
+                    per2:
+                        description: 删除客户
+                        value: 0
+                roles:
+                    kicker:
+                        description: 踢人的
+                        permissions: per1, per2
+                    fucker:
+                        description: XX人的
+                        permissions: per1
+            

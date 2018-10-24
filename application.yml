@@ -1,0 +1,11 @@
+spring.cloud.consul.host: 172.18.239.251 # dev1
+spring.cloud.consul.port: 8500
+pinfire.service_token: miffy #旧ServerToken
+pinfire.common.gateway-url: https://saas.dev.pinquest.cn
+
+spring:
+    cloud:
+        config:
+            allowOverride: true
+            overrideNone: true
+            overrideSystemProperties: false

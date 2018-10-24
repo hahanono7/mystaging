@@ -1,0 +1,16 @@
+pinfire:
+  account:
+    default-avatar: http://pa79m5vdn.bkt.clouddn.com/FjbUX8PrHqgaA9WccsbiRGXKQl2W
+    user-token-key: 5Os9fRefiKEprow1kefoRUpr3pUSPAD7Uq2HocAk
+spring:
+  datasource:
+    url: jdbc:mysql://rm-wz9icd85l8kbklqth6o.mysql.rds.aliyuncs.com/saas_account?useSSL=false&characterEncoding=utf-8
+    username: saas_dev
+    password: wLAtkUxbbAajZm4A
+    hikari:
+      connection-init-sql: "SET NAMES utf8mb4 COLLATE utf8mb4_unicode_ci;"
+
+  redis:
+    host: 172.18.239.251
+    port: 26379
+    database: 2

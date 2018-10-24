@@ -1,0 +1,6 @@
+pinfire.gateway.allow-old-token: true
+pinfire.gateway.user-token-key: 5Os9fRefiKEprow1kefoRUpr3pUSPAD7Uq2HocAk
+server.port: 19998
+pinfire.gateway.allow-pulic-appid-header: true
+pinfire.gateway.internal-forwarding.enabled: true
+pinfire.gateway.internal-forwarding.invokers: sched@crawler

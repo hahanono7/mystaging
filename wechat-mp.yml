@@ -1,0 +1,12 @@
+spring:
+  datasource:
+    url: jdbc:mysql://rm-wz9icd85l8kbklqth6o.mysql.rds.aliyuncs.com:3306/saas_wechatmp?useSSL=false&useUnicode=true&characterEncoding=utf8
+    username: saas_dev
+    password: wLAtkUxbbAajZm4A
+    hikari:
+      connection-init-sql: "SET NAMES utf8mb4 COLLATE utf8mb4_unicode_ci;"
+
+  redis:
+    host: 172.18.239.251
+    port: 26379
+    database: 1
